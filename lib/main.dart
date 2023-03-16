@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shorttraining_riverpod_usage/screens/counter_screen.dart';
+import 'package:shorttraining_riverpod_usage/screens/stream_screen.dart';
 
 import '../screens/home_page_screen.dart';
 
 void main() {
-  runApp(ProviderScope(child: MyApp()));
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
               surface: const Color(0xff003909))),
       home: HomePage(),
       routes: {
-        CounterScreen.routeName: (context) => CounterScreen(),
+        CounterScreen.routeName: (context) => const CounterScreen(),
+        StreamScreen.routeName: (context) => const StreamScreen(),
       },
     );
   }

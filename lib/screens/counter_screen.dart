@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final counterProvider = StateProvider((ref) => 0);
 
 class CounterScreen extends ConsumerWidget {
-  static const routeName = 'counter';
+  static const routeName = '/counter';
 
   const CounterScreen({super.key});
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../screens/stream_screen.dart';
 import '../screens/counter_screen.dart';
 
 class HomePage extends StatelessWidget {
@@ -10,13 +11,23 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Home Page')),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.of(context).pushNamed(CounterScreen.routeName);
-          },
-          child: const Text('Go to Counter Page'),
-        ),
-      ),
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed(CounterScreen.routeName);
+            },
+            child: const Text('Go to Counter Page'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed(StreamScreen.routeName);
+            },
+            child: const Text('Go to Stream Page'),
+          ),
+        ],
+      )),
     );
   }
 }
