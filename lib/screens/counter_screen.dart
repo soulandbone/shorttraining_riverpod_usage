@@ -23,7 +23,10 @@ class CounterScreen extends ConsumerWidget {
                   actions: [
                     TextButton(
                         onPressed: () => Navigator.of(context).pop(),
-                        child: const Text('Ok')),
+                        child: const Text(
+                          'Ok',
+                          style: TextStyle(fontSize: 24),
+                        )),
                   ],
                 ));
       }

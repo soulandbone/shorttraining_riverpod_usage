@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shorttraining_riverpod_usage/screens/future_screen.dart';
 
 import '../screens/stream_screen.dart';
 import '../screens/counter_screen.dart';
@@ -25,6 +26,12 @@ class HomePage extends StatelessWidget {
               Navigator.of(context).pushNamed(StreamScreen.routeName);
             },
             child: const Text('Go to Stream Page'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed(FutureScreen.routeName);
+            },
+            child: const Text('Go to Future Page'),
           ),
         ],
       )),
