@@ -19,7 +19,7 @@ class ApiService {
   }
 }
 
-final futureValueProvider = FutureProvider.autoDispose((ref) {
-  final apiService = ref.watch(futureServiceProvider);
-  return apiService.getActivity();
-});
+// final futureValueProvider = FutureProvider.autoDispose((ref) {
+//   final apiService = ref.watch(futureServiceProvider);
+//   return apiService.getActivity();
+// });

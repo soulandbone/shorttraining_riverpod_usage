@@ -5,7 +5,12 @@ import '../auxiliars/api_service.dart';
 class FutureScreen extends ConsumerWidget {
   static const routeName = '/future';
 
-  const FutureScreen({super.key});
+  FutureScreen({super.key});
+
+  final futureValueProvider = FutureProvider.autoDispose((ref) {
+    final apiService = ref.watch(futureServiceProvider);
+    return apiService.getActivity();
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
