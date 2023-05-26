@@ -23,12 +23,12 @@ class MyApp extends StatelessWidget {
               seedColor: Colors.green,
               brightness: Brightness.dark,
               surface: const Color(0xff003909))),
-      home: HomePage(),
+      home: const HomePage(),
       routes: {
         CounterScreen.routeName: (context) => const CounterScreen(),
         StreamScreen.routeName: (context) => const StreamScreen(),
         FutureScreen.routeName: (context) => FutureScreen(),
-        ListScreen.routeName: (context) => ListScreen(),
+        ListScreen.routeName: (context) => const ListScreen(),
       },
     );
   }

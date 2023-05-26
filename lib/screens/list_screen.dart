@@ -7,7 +7,7 @@ import '../classes/todo.dart';
 class ListScreen extends ConsumerWidget {
   static const routeName = '/list';
 
-  ListScreen({super.key});
+  const ListScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
